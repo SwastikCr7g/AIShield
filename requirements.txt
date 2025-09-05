@@ -1,0 +1,22 @@
+Flask==3.0.3
+Werkzeug>=3.0.0
+numpy
+opencv-python
+Pillow
+torch
+torchvision
+timm
+albumentations
+scikit-learn
+matplotlib
+tqdm
+flask
+python-dotenv
+requests
+opencv-python
+Flask>=2.0
+python-dotenv
+transformers>=4.30
+torch        # if you need to specify a particular torch wheel, follow torch install guide
+Pillow
+opencv-python
