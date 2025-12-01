@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+  <section class="upload-section">
+    <h2 class="page-heading">🎥 Detect Video</h2>
+
+    <form action="{{ url_for('main.detect_video') }}" method="post" enctype="multipart/form-data" class="upload-box">
+      <input type="file" name="video" accept="video/*" required>
+      <button type="submit">Analyze</button>
+    </form>
+
+    {% if result %}
+      {% set verdict = result.lower() %}
+      <div class="result-box {% if 'ai' in verdict %}result-ai{% else %}result-real{% endif %}">
+        <h3>Result:</h3>
+        <p>{{ result }}</p>
+      </div>
+    {% endif %}
+
+    <div class="back-btn">
+      <a href="{{ url_for('main.index') }}">⬅ Back</a>
+    </div>
+  </section>
+{% endblock %}
