@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+  <section class="hero">
+    <h2>✨ Detect AI-Generated Content ✨</h2>
+    <p>Select what you want to analyze:</p>
+    <div class="choice-grid">
+      <a class="card" href="{{ url_for('main.detect_image_page') }}">
+        <h3>Image</h3>
+        <p>Upload an image to check if it’s AI-generated or real.</p>
+      </a>
+      <a class="card" href="{{ url_for('main.detect_video_page') }}">
+        <h3>Video</h3>
+        <p>Upload a video; we’ll analyze frames and vote on authenticity.</p>
+      </a>
+    </div>
+  </section>
+{% endblock %}

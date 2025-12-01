@@ -1,0 +1,143 @@
+/* main.css */
+
+/* General reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  color: #fff;
+  text-align: center;
+}
+
+/* Hero / Main Heading */
+.hero h1,
+.hero h2 {
+  font-size: 2.5rem;
+  margin: 30px 0 20px;
+  color: #00f5d4;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* Subheadings (Detect Image, Detect Video) */
+section h2 {
+  font-size: 2rem;
+  margin: 20px 0 15px;
+  color: #00f5d4;
+  text-align: center;
+}
+
+/* Paragraph spacing */
+.hero p,
+section p {
+  font-size: 1rem;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+/* Upload Box */
+.upload-box {
+  margin: 25px auto;
+  padding: 30px;
+  max-width: 400px;
+  border: 2px dashed #00f5d4;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+
+/* Buttons */
+button,
+.back-btn {
+  display: block;
+  margin: 30px auto 0;
+  padding: 12px 22px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button {
+  background: #00f5d4;
+  color: #111;
+}
+
+button:hover {
+  background: #00c9a7;
+}
+
+.back-btn {
+  background: #ff4d6d;
+  color: #fff;
+  text-decoration: none;
+}
+
+.back-btn:hover {
+  background: #e63956;
+}
+
+/* Grid cards in index.html */
+.choice-grid {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 25px;
+  border-radius: 15px;
+  width: 220px;
+  transition: transform 0.3s, background 0.3s;
+  text-align: center;
+}
+
+.card h3 {
+  color: #00f5d4;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.9rem;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.12);
+}
+.page-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222; /* same color theme as previous UI */
+}
+/* Result Box */
+.result-box {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 500px;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Real result (green) */
+.result-real {
+  background: rgba(0, 255, 150, 0.15);
+  border: 2px solid #00ff96;
+  color: #00ff96;
+}
+
+/* AI result (red) */
+.result-ai {
+  background: rgba(255, 50, 80, 0.15);
+  border: 2px solid #ff3250;
+  color: #ff3250;
+}
