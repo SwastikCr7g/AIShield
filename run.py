@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # run.py (project root)
 from app import create_app
 
